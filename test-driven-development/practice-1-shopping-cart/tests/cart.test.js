@@ -1,4 +1,4 @@
-const { addItem, removeItem, getTotalItems } = require("./cart");
+const { addItem, removeItem, getTotalItems } = require("../cart");
 
 describe("Shopping Cart Module", () => {
 	let cart;
