@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width,
+initial-scale=1.0"
+		/>
+		<title>Website Feedback Form</title>
+	</head>
+	<body>
+		<h1>Website Feedback Form</h1>
+		<!-- Start of the feedback form -->
+		<form action="/submit-feedback" method="post">
+			<!-- Personal Information Group -->
+			<fieldset>
+				<legend>Personal Information</legend>
+				<!-- Full Name -->
+				<label for="fullname">Full Name:</label>
+				<input
+					type="text"
+					id="fullname"
+					name="fullname"
+					placeholder="Enter your full name"
+					required
+					minlength="2"
+				/>
+				<br /><br />
+				<!-- Email Address -->
+				<label for="email">Email Address:</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					placeholder="example@example.com"
+					required
+				/>
+				<br /><br />
+				<!-- Password -->
+				<label for="password">Password:</label>
+				<input
+					type="password"
+					id="password"
+					name="password"
+					placeholder="Enter your password"
+					required
+					minlength="8"
+				/>
+				<br /><br />
+			</fieldset>
+			<!-- Feedback Details Group -->
+			<fieldset>
+				<legend>Feedback Details</legend>
+				<!-- Feedback Category -->
+				<label for="category">Feedback Category:</label>
+				<select id="category" name="category" required>
+					<option value="" disabled selected>Select a category</option>
+					<option value="website">Website Design</option>
+					<option value="content">Content Quality</option>
+					<option value="usability">Usability</option>
+					<option value="other">Other</option>
+				</select>
+				<br /><br />
+				<!-- Preferred Contact Method (Radio Buttons) -->
+				<p>Preferred Contact Method:</p>
+				<input
+					type="radio"
+					id="contact-email"
+					name="contact"
+					value="email"
+					checked
+				/>
+				<label for="contact-email">Email</label>
+				<input type="radio" id="contact-phone" name="contact" value="phone" />
+				<label for="contact-phone">Phone</label>
+				<input type="radio" id="contact-none" name="contact" value="none" />
+				<label for="contact-none">No Contact</label>
+				<br /><br />
+				<!-- Additional Features of Interest (Checkboxes) -->
+				<p>Additional Features of Interest:</p>
+				<input
+					type="checkbox"
+					id="feature-newsletter"
+					name="features"
+					value="newsletter"
+					checked
+				/>
+				<label for="feature-newsletter">Newsletter Subscription</label>
+				<input type="checkbox" id="feature-beta" name="features" value="beta" />
+				<label for="feature-beta">Beta Testing</label>
+				<input
+					type="checkbox"
+					id="feature-discounts"
+					name="features"
+					value="discounts"
+				/>
+				<label for="feature-discounts">Exclusive Discounts</label>
+				<br /><br />
+				<!-- Comments (Textarea) -->
+				<label for="comments">Comments:</label>
+				<br />
+				<textarea
+					id="comments"
+					name="comments"
+					placeholder="Enter your comments here"
+					rows="5"
+					cols="30"
+				></textarea>
+			</fieldset>
+			<!-- Submit Button -->
+			<br />
+			<input type="submit" value="Submit Feedback" />
+		</form>
+	</body>
+</html>
