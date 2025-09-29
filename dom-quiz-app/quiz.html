@@ -1,0 +1,26 @@
+<!-- Create a basic HTML structure with the following elements:
+● The question text.
+● Four buttons for answer choices.
+● An element to display feedback after an answer is selected.
+● A “Next Question” button to move onto the next question. -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="quiz.js" defer></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interactive Quiz</title>
+	</head>
+	<body>
+		<div id="quiz-container">
+			<div id="question">Question will appear here</div>
+			<button class="answer">Answer 1</button>
+			<button class="answer">Answer 2</button>
+			<button class="answer">Answer 3</button>
+			<button class="answer">Answer 4</button>
+			<p id="feedback"></p>
+			<button id="next-question" style="display: none">Next Question</button>
+		</div>
+	</body>
+</html>
