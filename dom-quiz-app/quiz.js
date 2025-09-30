@@ -33,7 +33,7 @@ const questions = [
 
 let currentQuestion = 0;
 
-// Create references to DOM elements
+// Objects referencing HTML elements
 const questionElement = document.getElementById("question");
 const answerButtons = document.querySelectorAll(".answer");
 const feedbackElement = document.getElementById("feedback");
