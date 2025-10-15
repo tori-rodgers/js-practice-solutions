@@ -1,0 +1,81 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* General App styling */
+.App {
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+/* Profile container styling */
+.profile-container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f5f7fa;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.profile-container h1 {
+	margin-bottom: 30px;
+	color: #2c3e50;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	font-family: Arial, sans-serif;
+}
+
+/* App container */
+.App {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+/* Profile container */
+.profile-container {
+	width: 100%;
+	max-width: 900px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	text-align: center;
+}
+
+/* Container title */
+.profile-container h1 {
+	margin-bottom: 20px;
+	color: #333;
+}
+
+/* Grid for cards */
+.profiles-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 20px;
+	justify-content: center;
+}
