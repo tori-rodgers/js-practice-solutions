@@ -1,0 +1,53 @@
+/* Center the form */
+body {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+/* Add padding, borders, and spacing */
+.feedback-container {
+	max-width: 600px;
+	width: 100%;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-top: 5px;
+}
+
+/* Character counter styling */
+.character-counter {
+	text-align: right;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+/* Button states */
+.btn-enabled {
+	background-color: #4a90e2;
+	color: white;
+}
+.btn-disabled {
+	background-color: #cccccc;
+	color: #666666;
+	cursor: not-allowed;
+}
+
+/* Preview section */
+.preview-container {
+	margin-top: 20px;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
